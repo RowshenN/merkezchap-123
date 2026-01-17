@@ -1,13 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './pages/Home';
+import "./App.css";
+import Router from "./router/Router";
 
 function App() {
   return (
-    <div className='w-full h-[100vh] flex items-center justify-center text-lg '>
-      <Home />
+    <div className="">
+      <Router />
     </div>
   );
 }
 
-export default App
+export default App;
