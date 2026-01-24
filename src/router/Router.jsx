@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {  Routes, Route, useLocation, HashRouter } from "react-router-dom";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Home from "../pages/Home";
@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navigation />
       <ScrollTop>
         <div className="w-[90%] mx-auto max-w-[1440px] ">
@@ -22,7 +22,7 @@ const Router = () => {
         </div>
         <Footer />
       </ScrollTop>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
