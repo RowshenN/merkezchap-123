@@ -70,56 +70,56 @@ const Home = () => {
           {/* FIRST SET */}
           <div className="flex items-center justify-between xs:p-3 md:p-[20px] xs:gap-[40px] md:gap-[65px]">
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img1} className="w-auto h-full" />
+              <img alt='carousel img' src={img1} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img2} className="w-auto h-full" />
+              <img alt='carousel img' src={img2} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img3} className="w-auto h-full" />
+              <img alt='carousel img' src={img3} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img4} className="w-auto h-full" />
+              <img alt='carousel img' src={img4} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img5} className="w-auto h-full" />
+              <img alt='carousel img' src={img5} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img6} className="w-auto h-full" />
+              <img alt='carousel img' src={img6} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img7} className="w-auto h-full" />
+              <img alt='carousel img' src={img7} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img8} className="w-auto h-full" />
+              <img alt='carousel img' src={img8} className="w-auto h-full" />
             </div>
           </div>
 
           {/* DUPLICATE SET (important for no gap) */}
           <div className="flex items-center justify-between p-[20px] gap-[65px]">
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img1} className="w-auto h-full" />
+              <img alt='carousel img' src={img1} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img2} className="w-auto h-full" />
+              <img alt='carousel img' src={img2} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img3} className="w-auto h-full" />
+              <img alt='carousel img' src={img3} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img4} className="w-auto h-full" />
+              <img alt='carousel img' src={img4} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img5} className="w-auto h-full" />
+              <img alt='carousel img' src={img5} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img6} className="w-auto h-full" />
+              <img alt='carousel img' src={img6} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img7} className="w-auto h-full" />
+              <img alt='carousel img' src={img7} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img src={img8} className="w-auto h-full" />
+              <img alt='carousel img' src={img8} className="w-auto h-full" />
             </div>
           </div>
         </div>
