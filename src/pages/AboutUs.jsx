@@ -11,6 +11,9 @@ import Caphana from "./../images/Caphana.png";
 
 const AboutUs = () => {
   const { dil } = useContext(SebedimContext);
+
+  console.log(dil);
+  
   
   return (
     <div>
