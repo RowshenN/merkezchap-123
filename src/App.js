@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.css";
 import SebedimContextProvider from "./context/Context";
 import Router from "./router/Router";
