@@ -13,8 +13,7 @@ const AboutUs = () => {
   const { dil } = useContext(SebedimContext);
 
   console.log(dil);
-  
-  
+
   return (
     <div>
       <div data-aos="fade-up" className="xs:my-8 md:my-[70px] ">
@@ -108,10 +107,10 @@ const AboutUs = () => {
             </h1>
             <p>
               {dil === "tm"
-                ? "Merkez Agro dürli oba hojalyk önümçilik taslamalaryny ýerine ýetirýär. Biz täze tehnikalar we kämil agronomlar bilen oba hojalygynda ýokary hilli önüm öndürmegi üpjün edýäris. Harytlarymyz dogry we wagtynda öndürilýär, müşderilerimiz üçin ygtybarly we netijeli çözgütler hödürleýäris. Kiçi fermalardan uly desgalara çenli ähli taslamalarymyz üçin hyzmat berýäris."
+                ? "Merkez Agro Ýyladyşhanasy gök we bakja önümlerini öndürmekde öňdebaryjy kärhanalaryň biri hasaplanylýar. Biz täze tehnikalar we kämil agronomlar bilen oba hojalygynda ýokary hilli önüm öndürmegi üpjün edýäris. Harytlarymyz dogry we wagtynda öndürilýär, müşderilerimiz üçin ygtybarly we netijeli çözgütler hödürleýäris. Kiçi fermalardan uly desgalara çenli ähli taslamalarymyz üçin hyzmat berýäris."
                 : dil === "ru"
-                  ? "Merkez Agro реализует различные проекты в области сельского хозяйства. Используя современные технологии и опытных агрономов, мы обеспечиваем производство высококачественной продукции. Наша продукция производится точно и вовремя, предоставляя надежные и эффективные решения для клиентов. Мы обслуживаем все проекты — от небольших ферм до крупных агропредприятий."
-                  : "Merkez Agro carries out various agricultural production projects. Using modern techniques and experienced agronomists, we ensure high-quality crop production. Our products are produced accurately and on time, providing reliable and effective solutions for our clients. We offer services for all projects, from small farms to large agricultural facilities."}
+                  ? "Тепличное хозяйство Merkez Agro считается одним из ведущих предприятий по производству овощной и бахчевой продукции. Используя современную технику и опытных агрономов, мы обеспечиваем высокое качество сельскохозяйственной продукции. Наша продукция производится точно и своевременно, а клиентам мы предлагаем надёжные и эффективные решения. Мы обслуживаем проекты любого масштаба — от небольших ферм до крупных комплексов."
+                  : "Merkez Agro Greenhouse is considered one of the leading enterprises in the production of vegetables and melon crops. With modern equipment and skilled agronomists, we ensure high-quality agricultural production. Our products are produced accurately and on time, and we offer reliable and efficient solutions for our customers. We provide services for all projects, from small farms to large facilities."}
             </p>
           </div>
         </div>
@@ -148,8 +147,15 @@ const AboutUs = () => {
 
         <div
           data-aos="fade-up"
-          className="w-full mt-[50px] md:flex-row xs:flex-col-reverse flex items-center justify-center xs:gap-6 md:gap-[80px] "
+          className="w-full mt-[50px] md:flex-row xs:flex-col flex items-center justify-center xs:gap-6 md:gap-[80px] "
         >
+          <div className="xs:w-full h-[300px] md:w-[50%] ">
+            <img
+              src={Karopga}
+              alt="parniuk"
+              className="w-full h-full object-cover "
+            />
+          </div>
           <div className="xs:w-full md:w-[50%] ">
             <h1 className="xs:text-[22px] md:text-[32px] mb-2 font-[600] ">
               {dil === "tm"
@@ -166,27 +172,12 @@ const AboutUs = () => {
                   : "Merkez Paper Production produces high-quality paper products. Our products are available in various sizes and designs to meet your needs. Using modern technologies and skilled specialists, we prepare paper products accurately and on time. From small orders to large-scale projects, we provide reliable service for all clients."}
             </p>
           </div>
-
-          <div className="xs:w-full h-[300px] md:w-[50%] ">
-            <img
-              src={Karopga}
-              alt="parniuk"
-              className="w-full h-full object-cover "
-            />
-          </div>
         </div>
 
         <div
           data-aos="fade-up"
-          className="w-full mt-[50px] md:flex-row xs:flex-col flex items-center justify-center xs:gap-6 md:gap-[80px] "
+          className="w-full mt-[50px] md:flex-row xs:flex-col-reverse flex items-center justify-center xs:gap-6 md:gap-[80px] "
         >
-          <div className="xs:w-full h-[300px] md:w-[50%] ">
-            <img
-              src={Gurlusyk}
-              alt="parniuk"
-              className="w-full h-full object-cover "
-            />
-          </div>
           <div className="xs:w-full md:w-[50%] ">
             <h1 className="xs:text-[22px] md:text-[32px] mb-2 font-[600] ">
               {dil === "tm"
@@ -203,12 +194,26 @@ const AboutUs = () => {
                   : "Merkez Construction handles various construction and renovation projects. With highly skilled specialists and modern equipment, we execute projects on time and with high quality. Each project receives a tailored solution and innovative approach to meet the specific needs of our clients."}
             </p>
           </div>
+          <div className="xs:w-full h-[300px] md:w-[50%] ">
+            <img
+              src={Gurlusyk}
+              alt="parniuk"
+              className="w-full h-full object-cover "
+            />
+          </div>
         </div>
 
         <div
           data-aos="fade-up"
-          className="w-full mt-[50px] md:flex-row xs:flex-col-reverse flex items-center justify-center xs:gap-6 md:gap-[80px] "
+          className="w-full mt-[50px] md:flex-row xs:flex-col flex items-center justify-center xs:gap-6 md:gap-[80px] "
         >
+          <div className="xs:w-full h-[300px] md:w-[50%] ">
+            <img
+              src={Caphana}
+              alt="parniuk"
+              className="w-full h-full object-cover "
+            />
+          </div>
           <div className="xs:w-full md:w-[50%] ">
             <h1 className="xs:text-[22px] md:text-[32px] mb-2 font-[600] ">
               {dil === "tm"
@@ -224,14 +229,6 @@ const AboutUs = () => {
                   ? "Merkez Типография предоставляет профессиональные услуги печати. Мы выполняем высококачественную печать в различных дизайнах, размерах и материалах. С современным оборудованием и опытными специалистами мы готовим заказы точно и вовремя. Каждый клиент получает индивидуальные решения и услуги высокого качества."
                   : "Merkez Printing House provides professional printing services. We perform high-quality printing in various designs, sizes, and materials. With modern equipment and experienced specialists, we prepare orders accurately and on time. Each client receives personalized solutions and top-quality service."}
             </p>
-          </div>
-
-          <div className="xs:w-full h-[300px] md:w-[50%] ">
-            <img
-              src={Caphana}
-              alt="parniuk"
-              className="w-full h-full object-cover "
-            />
           </div>
         </div>
       </div>

@@ -46,9 +46,10 @@ const ContactUs = () => {
               alt=""
               className="xs:w-[17px] md:w-[20px] xs:h-[17px] md:h-[20px]"
             />
-            <span className="font-[500] xs:text-[17px] md:text-[20px]">
-              +99363030303
-            </span>
+            <div className="flex flex-col items-baseline gap-1 ">
+                <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99361755535</p>
+                <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99312922062</p>
+              </div>
           </div>
           <div className="flex items-center gap-[10px]">
             <img
