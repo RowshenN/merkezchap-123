@@ -96,7 +96,7 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </div>
-      <div id="fq">
+      <div data-aos="fade-up" id="fq">
         <h1 className="font-[500] xs:text-[28px] md:text-[36px] text-center xs:mb-[30px] md:mb-[40px]">
           {dil === "tm"
             ? "Köp berilýän soraglar"
@@ -105,7 +105,7 @@ const ContactUs = () => {
               : "Frequently Asked Questions"}
         </h1>
         <div className="flex flex-col gap-[25px] xs:mb-[100px] md:mb-[150px]">
-          <div className=" pb-4">
+          <div data-aos="fade-up" className=" pb-4">
             <div
               onClick={() => toggle(1)}
               className="flex items-center justify-between cursor-pointer transition-all duration-200 hover:bg-white py-1 px-2"
@@ -127,7 +127,7 @@ const ContactUs = () => {
             </div>
 
             {open === 1 && (
-              <p className="mt-4 text-gray-600 text-[16px] px-2">
+              <p  className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hawa, ähli welýatlara eltip bermek hyzmatymyz bar."
                   : dil === "ru"
@@ -137,7 +137,7 @@ const ContactUs = () => {
             )}
           </div>
 
-          <div className=" pb-4">
+          <div data-aos="fade-up" className=" pb-4">
             <div
               onClick={() => toggle(2)}
               className="flex items-center justify-between cursor-pointer transition-all duration-200 hover:bg-white py-1 px-2"
@@ -159,7 +159,7 @@ const ContactUs = () => {
             </div>
 
             {open === 2 && (
-              <p className="mt-4 text-gray-600 text-[16px] px-2">
+              <p  className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hawa, online sagyt edip bolýar."
                   : dil === "ru"
@@ -169,7 +169,7 @@ const ContactUs = () => {
             )}
           </div>
 
-          <div className=" pb-4">
+          <div data-aos="fade-up" className=" pb-4">
             <div
               onClick={() => toggle(3)}
               className="flex items-center justify-between cursor-pointer transition-all duration-200 hover:bg-white py-1 px-2"
@@ -191,7 +191,7 @@ const ContactUs = () => {
             </div>
 
             {open === 3 && (
-              <p className="mt-4 text-gray-600 text-[16px] px-2">
+              <p  className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Howa, dizaýn edip bermek hyzmatymyz bar."
                   : dil === "ru"
@@ -201,7 +201,7 @@ const ContactUs = () => {
             )}
           </div>
 
-          <div className=" pb-4">
+          <div data-aos="fade-up" className=" pb-4">
             <div
               onClick={() => toggle(4)}
               className="flex items-center justify-between cursor-pointer transition-all duration-200 hover:bg-white py-1 px-2"
@@ -223,7 +223,7 @@ const ContactUs = () => {
             </div>
 
             {open === 4 && (
-              <p className="mt-4 text-gray-600 text-[16px] px-2">
+              <p  className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hepdäniň 1 - 6 - njy günleri işleýäris."
                   : dil === "ru"
@@ -233,7 +233,7 @@ const ContactUs = () => {
             )}
           </div>
 
-          <div className=" pb-4">
+          <div data-aos="fade-up" className=" pb-4">
             <div
               onClick={() => toggle(5)}
               className="flex items-center justify-between cursor-pointer transition-all duration-200 hover:bg-white py-1 px-2"
@@ -255,7 +255,7 @@ const ContactUs = () => {
             </div>
 
             {open === 5 && (
-              <p className="mt-4 text-gray-600 text-[16px] px-2">
+              <p  className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Howa, gyssagly ýagdaýda hem sargytlary kabul etýäris."
                   : dil === "ru"
