@@ -5,6 +5,7 @@ import img30 from "./../images/black-loc.svg";
 import img31 from "./../images/black-arrow.svg";
 import { useContext, useState } from "react";
 import { SebedimContext } from "../context/Context";
+import { Helmet } from 'react-helmet-async'
 
 const ContactUs = () => {
   const [open, setOpen] = useState(null);
@@ -17,6 +18,10 @@ const ContactUs = () => {
 
   return (
     <div data-aos="fade-up">
+      <Helmet>
+        <title>Merkez Çaphana | Contact</title>
+        <meta name="description" content="..." />
+      </Helmet>
       <h1 className="pt-[40px] font-[500] xs:text-[28px] md:text-[36px] text-center">
         {dil === "tm"
           ? "Biz bilen Habarlaş"

@@ -12,11 +12,32 @@ import ServiceCollection from "../components/ServiceCollection";
 import Categories from "../components/Categories";
 import { SebedimContext } from "../context/Context";
 import { useContext } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const { dil } = useContext(SebedimContext);
   return (
     <div>
+      <Helmet>
+        <title>
+          {dil === "tm"
+            ? "Merkez Çaphana – Çap hyzmatlary"
+            : dil === "ru"
+            ? "Типография Merkez"
+            : "Merkez Printing House"}
+        </title>
+
+        <meta
+          name="description"
+          content={
+            dil === "tm"
+              ? "Merkez Çaphana Türkmenistanda ýokary hilli çap hyzmatlaryny hödürleýär."
+              : dil === "ru"
+              ? "Типография Merkez предлагает профессиональные полиграфические услуги."
+              : "Merkez Printing House offers professional printing services."
+          }
+        />
+      </Helmet>
       {/* =====================================================blue part======================================================== */}
       <div
         data-aos="fade-down"
@@ -70,56 +91,60 @@ const Home = () => {
           {/* FIRST SET */}
           <div className="flex items-center justify-between xs:p-3 md:p-[20px] xs:gap-[40px] md:gap-[65px]">
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img1} className="w-auto h-full" />
+              <img
+                src={img1}
+                alt="Merkez Çaphana printing partner logo"
+                className="w-auto h-full"
+              />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img2} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img2} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img3} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img3} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img4} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img4} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img5} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img5} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img6} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img6} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img7} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img7} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img8} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img8} className="w-auto h-full" />
             </div>
           </div>
 
           {/* DUPLICATE SET (important for no gap) */}
           <div className="flex items-center justify-between p-[20px] gap-[65px]">
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img1} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img1} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img2} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img2} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img3} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img3} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img4} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img4} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img5} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img5} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img6} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img6} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img7} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img7} className="w-auto h-full" />
             </div>
             <div className="xs:h-[40px] md:h-[58px]">
-              <img alt='carousel img' src={img8} className="w-auto h-full" />
+              <img alt='Merkez chaphana img' src={img8} className="w-auto h-full" />
             </div>
           </div>
         </div>
