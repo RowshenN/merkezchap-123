@@ -1,20 +1,20 @@
-import img27 from "./../images/Vector.svg";
-import img28 from "./../images/black-inst.svg";
-import img29 from "./../images/black-tiktok.svg";
-import img30 from "./../images/black-loc.svg";
-import img31 from "./../images/black-arrow.svg";
-import { useContext, useState } from "react";
-import { SebedimContext } from "../context/Context";
+import img27 from "./../images/Vector.svg"
+import img28 from "./../images/black-inst.svg"
+import img29 from "./../images/black-tiktok.svg"
+import img30 from "./../images/black-loc.svg"
+import img31 from "./../images/black-arrow.svg"
+import { useContext, useState } from "react"
+import { SebedimContext } from "../context/Context"
 import { Helmet } from 'react-helmet-async'
 
 const ContactUs = () => {
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(null)
 
   const toggle = (index) => {
-    setOpen(open === index ? null : index);
-  };
+    setOpen(open === index ? null : index)
+  }
 
-  const { dil } = useContext(SebedimContext);
+  const { dil } = useContext(SebedimContext)
 
   return (
     <div data-aos="fade-up">
@@ -52,9 +52,9 @@ const ContactUs = () => {
               className="xs:w-[17px] md:w-[20px] xs:h-[17px] md:h-[20px]"
             />
             <div className="flex flex-col items-baseline gap-1 ">
-                <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99361755535</p>
-                <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99312922062</p>
-              </div>
+              <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99361755535</p>
+              <p className="md:text-[20px] font-[500] xs:text-[17px] ">+99312922062</p>
+            </div>
           </div>
           <div className="flex items-center gap-[10px]">
             <img
@@ -101,7 +101,7 @@ const ContactUs = () => {
           ></iframe>
         </div>
       </div>
-      <div data-aos="fade-up" id="fq">
+      <div data-aos="fade-up" id="faq">
         <h1 className="font-[500] xs:text-[28px] md:text-[36px] text-center xs:mb-[30px] md:mb-[40px]">
           {dil === "tm"
             ? "Köp berilýän soraglar"
@@ -125,14 +125,13 @@ const ContactUs = () => {
               <img
                 src={img31}
                 alt=""
-                className={`w-[16px] h-[16px] transition-transform ${
-                  open === 1 ? "rotate-180" : ""
-                }`}
+                className={`w-[16px] h-[16px] transition-transform ${open === 1 ? "rotate-180" : ""
+                  }`}
               />
             </div>
 
             {open === 1 && (
-              <p  className="mt-4 text-gray-600 text-[16px] px-2">
+              <p className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hawa, ähli welýatlara eltip bermek hyzmatymyz bar."
                   : dil === "ru"
@@ -157,14 +156,13 @@ const ContactUs = () => {
               <img
                 src={img31}
                 alt=""
-                className={`w-[16px] h-[16px] transition-transform ${
-                  open === 2 ? "rotate-180" : ""
-                }`}
+                className={`w-[16px] h-[16px] transition-transform ${open === 2 ? "rotate-180" : ""
+                  }`}
               />
             </div>
 
             {open === 2 && (
-              <p  className="mt-4 text-gray-600 text-[16px] px-2">
+              <p className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hawa, online sagyt edip bolýar."
                   : dil === "ru"
@@ -183,20 +181,19 @@ const ContactUs = () => {
                 {dil === "tm"
                   ? "Dizaýn edip bermek hyzmatlarynyz barmy?"
                   : dil === "ru"
-                  ? "Предоставляете ли вы услуги дизайна?"
+                    ? "Предоставляете ли вы услуги дизайна?"
                     : "Do you provide design services?"}
               </p>
               <img
                 src={img31}
                 alt=""
-                className={`w-[16px] h-[16px] transition-transform ${
-                  open === 3 ? "rotate-180" : ""
-                }`}
+                className={`w-[16px] h-[16px] transition-transform ${open === 3 ? "rotate-180" : ""
+                  }`}
               />
             </div>
 
             {open === 3 && (
-              <p  className="mt-4 text-gray-600 text-[16px] px-2">
+              <p className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Howa, dizaýn edip bermek hyzmatymyz bar."
                   : dil === "ru"
@@ -221,14 +218,13 @@ const ContactUs = () => {
               <img
                 src={img31}
                 alt=""
-                className={`w-[16px] h-[16px] transition-transform ${
-                  open === 4 ? "rotate-180" : ""
-                }`}
+                className={`w-[16px] h-[16px] transition-transform ${open === 4 ? "rotate-180" : ""
+                  }`}
               />
             </div>
 
             {open === 4 && (
-              <p  className="mt-4 text-gray-600 text-[16px] px-2">
+              <p className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Hepdäniň 1 - 6 - njy günleri işleýäris."
                   : dil === "ru"
@@ -253,14 +249,13 @@ const ContactUs = () => {
               <img
                 src={img31}
                 alt=""
-                className={`w-[16px] h-[16px] transition-transform ${
-                  open === 5 ? "rotate-180" : ""
-                }`}
+                className={`w-[16px] h-[16px] transition-transform ${open === 5 ? "rotate-180" : ""
+                  }`}
               />
             </div>
 
             {open === 5 && (
-              <p  className="mt-4 text-gray-600 text-[16px] px-2">
+              <p className="mt-4 text-gray-600 text-[16px] px-2">
                 {dil === "tm"
                   ? "Howa, gyssagly ýagdaýda hem sargytlary kabul etýäris."
                   : dil === "ru"
@@ -272,7 +267,7 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ContactUs;
+export default ContactUs
