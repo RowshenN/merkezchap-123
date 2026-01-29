@@ -1,11 +1,11 @@
-import { useContext } from "react";
-import { SebedimContext } from "../context/Context";
-import img26 from "../images/our work.png";
+import { useContext } from "react"
+import { SebedimContext } from "../context/Context"
+import img26 from "../images/our work.png"
 
 const OurWork = ({ center }) => {
-  const { dil } = useContext(SebedimContext);
+  const { dil } = useContext(SebedimContext)
   return (
-    <div id="/ourWork" data-aos="fade-up" className=" mb-[70px]">
+    <div id="ourWork" data-aos="fade-up" className=" mb-[70px]">
       <h1
         className={`font-[500] ${center ? "text-center" : "text-left"}  xs:text-[27px] md:text-[36px] mt-[24px] xs:mb-[30px] md:mb-[70px]`}
       >
@@ -23,7 +23,7 @@ const OurWork = ({ center }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurWork;
+export default OurWork

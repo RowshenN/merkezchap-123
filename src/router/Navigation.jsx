@@ -1,19 +1,19 @@
-import { useContext, useState } from "react";
-import headerLogo from "./../images/logo.png";
-import phoneIcon from "./../images/navigation_phone.svg";
-import img31 from "./../images/black-arrow.svg";
-import globe from "./../images/globe.svg";
-import { Link } from "react-router-dom";
-import { SebedimContext } from "../context/Context";
+import { useContext, useState } from "react"
+import headerLogo from "./../images/logo.png"
+import phoneIcon from "./../images/navigation_phone.svg"
+import img31 from "./../images/black-arrow.svg"
+import globe from "./../images/globe.svg"
+import { Link } from "react-router-dom"
+import { SebedimContext } from "../context/Context"
 
 const Navigation = () => {
-  const [open, setOpen] = useState(false);
-  const { dil, ChangeDil } = useContext(SebedimContext);
+  const [open, setOpen] = useState(false)
+  const { dil, ChangeDil } = useContext(SebedimContext)
 
-  const [lang, setLang] = useState(false);
+  const [lang, setLang] = useState(false)
 
   return (
-    <div className="w-full shadow-lg sticky top-0 z-[100] py-[15px] bg-white rounded-br-lg rounded-bl-lg ">
+    <div className="w-full  z-[100] sticky top-0 py-[15px] bg-white rounded-br-lg rounded-bl-lg ">
       <div className="w-[90%] mx-auto flex flex-col min-[731px]:flex-row min-[731px]:justify-between min-[731px]:items-center gap-4">
         <div className="flex items-center justify-between ">
           <Link to="/">
@@ -153,9 +153,8 @@ const Navigation = () => {
                   <img
                     src={img31}
                     alt=""
-                    className={`w-4 h-4 transition-transform ${
-                      open ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 transition-transform ${open ? "rotate-180" : ""
+                      }`}
                   />
                 </div>
 
@@ -178,7 +177,7 @@ const Navigation = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
